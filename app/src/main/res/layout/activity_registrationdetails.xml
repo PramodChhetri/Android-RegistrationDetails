@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/tv_Details"
+        android:textSize="30sp"
+        android:text="@string/str_Details"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_Details"
+        android:id="@+id/tv_DName"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:text="Full Name :"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_SName"
+        app:layout_constraintStart_toEndOf="@+id/tv_DName"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Details"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tv_DName"
+        app:layout_constraintTop_toBottomOf="@id/tv_DName"
+        android:id="@+id/tv_DAddress"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:text="Address :"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_SAddress"
+        app:layout_constraintStart_toEndOf="@+id/tv_DAddress"
+        app:layout_constraintTop_toBottomOf="@+id/tv_SName"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tv_DAddress"
+        app:layout_constraintTop_toBottomOf="@id/tv_DAddress"
+        android:id="@+id/tv_DDOB"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:text="Date of Birth :"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_SDOB"
+        app:layout_constraintStart_toEndOf="@+id/tv_DDOB"
+        app:layout_constraintTop_toBottomOf="@+id/tv_SAddress"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tv_DDOB"
+        app:layout_constraintTop_toBottomOf="@id/tv_DDOB"
+        android:id="@+id/tv_DContactNo"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:text="Contact No :"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_SContactNo"
+        app:layout_constraintStart_toEndOf="@+id/tv_DContactNo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_SDOB"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tv_DContactNo"
+        app:layout_constraintTop_toBottomOf="@id/tv_DContactNo"
+        android:id="@+id/tv_DGender"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:text="Gender :"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_SGender"
+        app:layout_constraintStart_toEndOf="@+id/tv_DContactNo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_SContactNo"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textSize="20sp"
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MP_04_SignUpFormUsingConstraintLayout</string>
+    <string name="str_AppLabel">Register Form</string>
+    <string name="str_Name">Full Name</string>
+    <string name="str_Address">Address</string>
+    <string name="str_DOB">Date of Birth</string>
+    <string name="str_ContactNo">Contact Number</string>
+    <string name="str_Gender">Gender</string>
+    <string name="str_Male">Male</string>
+    <string name="str_Female">Female</string>
+    <string name="str_Register">Register</string>
+    <string name="str_Show">Show</string>
+    <string name="str_Details">Registration Details</string>
+</resources>

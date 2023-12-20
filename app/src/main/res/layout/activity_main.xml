@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/tv_Register"
+        android:textSize="30sp"
+        android:text="@string/str_AppLabel"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_Name"
+        app:layout_constraintStart_toStartOf="@+id/tv_Register"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Register"
+        android:layout_marginTop="30dp"
+        android:text="@string/str_Name"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_Name"
+        app:layout_constraintStart_toStartOf="@+id/tv_Name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Name"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_Address"
+        app:layout_constraintStart_toStartOf="@+id/et_Name"
+        app:layout_constraintTop_toBottomOf="@+id/et_Name"
+        android:text="@string/str_Address"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_Address"
+        app:layout_constraintStart_toStartOf="@+id/tv_Address"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Address"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_DOB"
+        app:layout_constraintStart_toStartOf="@+id/et_Address"
+        app:layout_constraintTop_toBottomOf="@+id/et_Address"
+        android:text="@string/str_DOB"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_DOB"
+        app:layout_constraintStart_toStartOf="@+id/tv_DOB"
+        app:layout_constraintTop_toBottomOf="@+id/tv_DOB"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_ContactNo"
+        app:layout_constraintStart_toStartOf="@+id/et_DOB"
+        app:layout_constraintTop_toBottomOf="@+id/et_DOB"
+        android:text="@string/str_ContactNo"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_ContactNo"
+        app:layout_constraintStart_toStartOf="@+id/tv_ContactNo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ContactNo"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_Gender"
+        app:layout_constraintStart_toStartOf="@+id/et_ContactNo"
+        app:layout_constraintTop_toBottomOf="@+id/et_ContactNo"
+        android:text="@string/str_Gender"
+        android:textSize="20sp"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg_Gender"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Gender"
+        app:layout_constraintStart_toStartOf="@+id/tv_Gender"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb_Male"
+            android:text="@string/str_Male"
+            android:textSize="20sp"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb_Female"
+            android:text="@string/str_Female"
+            android:textSize="20sp"
+            />
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/rg_Gender"
+        app:layout_constraintTop_toBottomOf="@+id/rg_Gender"
+        android:id="@+id/btn_Register"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/str_Register"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
